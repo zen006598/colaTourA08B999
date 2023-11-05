@@ -1,0 +1,32 @@
+#frame{
+  width: 720px;
+  margin: auto;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  font-size: small;
+  border: 4px solid #00a3e0;
+  padding-left: 10px;
+  height: 35px;
+  margin-bottom: 1rem;
+  color: #00a3e0;
+}
+
+#searchBar{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#bookingList{
+  border: 1px solid blue;
+}
+
+.selector{
+  border:2px solid rgb(108,117,125, 0.1);
+  border-radius: 5px;
+}

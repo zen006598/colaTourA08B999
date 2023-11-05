@@ -1,0 +1,14 @@
+{
+  "name": "colatour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "A08B999.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0"
+  }
+}
