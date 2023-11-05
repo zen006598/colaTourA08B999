@@ -16,17 +16,98 @@ h1{
 
 #searchBar{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(7,1fr);
   gap:10px;
   width: 100%;
   margin-bottom: 1rem;
 }
 
-#bookingList{
-  border: 1px solid blue;
+.booking{
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border:2px solid rgb(108,117,125, 0.1);
+  padding: 10px 1rem;
+}
+
+.booking:hover{
+  border:2px solid rgb(0, 163, 224, 0.5);
 }
 
 .selector{
   border:2px solid rgb(108,117,125, 0.1);
   border-radius: 5px;
+  grid-column: span 2;
+}
+
+.bookingHeader{
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.bookingBody{
+  display: flex;
+}
+
+.digest{
+  font-size: large;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.digest::after{
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background-color: #00a3e0; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bookingInfo{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:6px;
+  position: relative;
+}
+
+.bookingInfo::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px; 
+  background-color: #ccc; 
+  content: "";
+}
+
+.bookingOption{
+  padding: 4px 6px;
+  width: 10%;
+}
+
+.bookingBtn{
+  width: 100%;
+  height: 50%;
+}
+
+.finishOption{
+  height:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  color: aliceblue;
+  background-color: #00a3e0;
+  border: none;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.btn:hover{
+  background-color: #15417e;
 }

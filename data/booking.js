@@ -1,9 +1,11 @@
+import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
 class Booking{
   constructor(id, digest, finishMark, deliveryTime,status, orderNo, nos, buyerName, customerName, paxName, departureTime){
     this.id = id;
     this.digest = digest;
     this.finishMark = finishMark;
     this.deliveryTime = deliveryTime;
+    this.status = status;
     this.orderNo = orderNo;
     this.nos = nos;
     this.buyerName = buyerName;
@@ -13,23 +15,25 @@ class Booking{
   }
 }
 
+const paxName = faker.person.fullName()
+
 const bookingList = [];
 const currentTime = new Date().toISOString().split('T')[0]
 for (let i = 1; i <= 10; i++) {
   const booking = new Booking(
     i.toString().padStart(5,'0'),
-    `Digest ${i}`,
+    `${faker.airline.airline().name} - ${faker.location.country()}`,
     false,
     currentTime,
+    'KK',
     i.toString().padStart(5,'0'),
     i,
-    `Buyer Name ${i}`,
-    `Customer Name ${i}`,
-    `Pax Name ${i}`,
+    faker.person.fullName(),
+    paxName,
+    paxName,
     currentTime
   );
 
   bookingList.push(booking);
 }
-
-export{bookingList}
+export{bookingList as bookings}
