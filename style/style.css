@@ -1,6 +1,7 @@
 #frame{
   width: 720px;
   margin: auto;
+  margin-top: 20px;
 }
 
 h1{
@@ -110,4 +111,16 @@ h1{
 
 .btn:hover{
   background-color: #15417e;
+}
+
+.KK{
+  color:#04BF8A;
+}
+
+.KT{
+  color:#04BF8A;
+}
+
+.orderNo{
+  color: red;
 }

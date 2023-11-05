@@ -19,9 +19,9 @@ bookings.forEach(booking => {
       <div class="bookingInfo">
         <div>配送時間：${booking.deliveryTime}</div>
         <div>預訂單號:${booking.id}</div>
-        <div>購票單號:${booking.orderNo}</div>
+        <div>購票單號:<span class='orderNo'>${booking.orderNo}</span></div>
         <div>預訂單狀態:
-          <span class="bookingStatus">${booking.status}</span>
+          <span class="bookingStatus ${booking.status}">${booking.status}</span>
           <span class="bookingNos">${booking.nos}</span>
         </div>
         <div class="buyererName">訂購姓名:${booking.buyerName}</div>
